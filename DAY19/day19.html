@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Given an array of numbers, use the map method to create a new array where each number is doubled.
+
+      let arr = [1, 2, 3, 4, 5];
+      var newarr = arr.map((val) => {
+        return val * 2;
+      });
+      console.log(newarr);
+
+      // Given an array of numbers, use the map method to create a new array where each element is the square of the original element.
+
+      let arr1 = [2, 9, 6, 5, 40];
+      var newarr1 = arr1.map((val) => {
+        return val * val;
+      });
+      console.log(newarr1);
+
+      // Given an array of numbers, use the filter method to create a new array that contains only the odd numbers.
+
+      let arr2 = [30, 4, 65, 23, 6, 7, 3, 2];
+      var newarr2 = arr2.filter((val) => {
+        return val % 2 == 1;
+      });
+      console.log(newarr2);
+
+      // Given an array of words, use the filter method to create
+      //  a new array that contains only words with 5 or fewer characters.
+      let arr3 = ["nikki", "navyamala", "sravani", "teja"];
+      var newarr3 = arr3.filter((val) => {
+        return val.length >= 5;
+      });
+      console.log(newarr3);
+
+      // creat cards using map method from fake store data
+
+      let data = [
+        {
+          id: 1,
+          title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          price: 109.95,
+          description:
+            "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+          category: "men's clothing",
+          image: "https://fakestoreapi.com/img/81fPKd-2AYL.AC_SL1500.jpg",
+          rating: {
+            rate: 3.9,
+            count: 120,
+          },
+        },
+        {
+          id: 2,
+          title:
+            "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+          price: 695,
+          description:
+            "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+          category: "jewelery",
+          image:
+            "https://fakestoreapi.com/img/71pWzhdJNwL.AC_UL640_QL65_ML3.jpg",
+          rating: {
+            rate: 4.6,
+            count: 400,
+          },
+        },
+        {
+          id: 3,
+          title: "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+          price: 109,
+          description:
+            "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+          category: "electronics",
+          image: "https://fakestoreapi.com/img/61U7T1koQqL.AC_SX679.jpg",
+          rating: {
+            rate: 2.9,
+            count: 470,
+          },
+        },
+        {
+          id: 4,
+          title: "DANVOUY Womens T Shirt Casual Cotton Short",
+          price: 12.99,
+          description:
+            "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+          category: "women's clothing",
+          image: "https://fakestoreapi.com/img/61pHAEJ4NML.AC_UX679.jpg",
+          rating: {
+            rate: 3.6,
+            count: 145,
+          },
+        },
+        {
+          id: 5,
+          title:
+            "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+          price: 695,
+          description:
+            "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+          category: "jewelery",
+          image:
+            "https://fakestoreapi.com/img/71pWzhdJNwL.AC_UL640_QL65_ML3.jpg",
+          rating: {
+            rate: 4.6,
+            count: 400,
+          },
+        },
+        {
+          id: 6,
+          title: "Solid Gold Petite Micropave ",
+          price: 168,
+          description:
+            "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+          category: "jewelery",
+          image:
+            "https://fakestoreapi.com/img/61sbMiUnoGL.AC_UL640_QL65_ML3.jpg",
+          rating: {
+            rate: 3.9,
+            count: 70,
+          },
+        },
+        {
+          id: 7,
+          title: "White Gold Plated Princess",
+          price: 9.99,
+          description:
+            "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+          category: "jewelery",
+          image:
+            "https://fakestoreapi.com/img/71YAIFU48IL.AC_UL640_QL65_ML3.jpg",
+          rating: {
+            rate: 3,
+            count: 400,
+          },
+        },
+        {
+          id: 8,
+          title: "Pierced Owl Rose Gold Plated Stainless Steel Double",
+          price: 10.99,
+          description:
+            "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+          category: "jewelery",
+          image:
+            "https://fakestoreapi.com/img/51UDEzMJVpL.AC_UL640_QL65_ML3.jpg",
+          rating: {
+            rate: 1.9,
+            count: 100,
+          },
+        },
+      ];
+      var maindiv = document.createElement("div");
+
+      let neewdata = data.map((val) => {
+        console.log(val.id);
+        console.log(val.category);
+        console.log(val.price);
+
+        var child = document.createElement("div");
+       
+        var childa = document.createElement("div");
+        var childb = document.createElement("div");
+        var childc = document.createElement("div");
+        var button=document.createElement("button")
+        
+
+        child.append(childa, childb, childc,button);
+        maindiv.appendChild(child);
+        button.addEventListener("click",()=>{
+          //  maindiv.removeChild(child);
+          child.style.display="none";
+        });
+
+        childa.innerText = "id :" + val.id;
+        childb.innerText = "price :" + val.price;
+        childc.innerText = "category :" + val.category;
+        button.innerText="remove";
+        button.style.margin="30px";
+        
+        child.style.border = "1px solid red";
+        child.style.padding = "20px";
+        child.style.margin = "20px";
+        child.style.color = "white";
+        child.style.textAlign = "center";
+        maindiv.style.display = "grid";
+        maindiv.style.gridTemplateColumns = "repeat(2, 1fr)";
+        maindiv.style.backgroundColor = "black";
+
+        document.body.appendChild(maindiv);
+      });
+    </script>
+  </body>
+</html>

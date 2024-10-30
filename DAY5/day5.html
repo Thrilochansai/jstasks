@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // nested ternary operator
+        // temperature
+        var temp1=prompt("enter temp");
+        var temp2=temp1>30?"hot":(temp1>=20)&&(temp1<=30)?"warm":(temp1>=10)&&(temp1<=19)?"cool":temp1<10?"cold":"enter a valid temp";
+        console.log(temp2);
+        
+        // age
+        var age=prompt("enter age");
+        var years=(age>=0)&&(age<=12)?"child":(age>=13)&&(age<=19)?"Teen":(age>=20)&&(age<=64)?"adult":(age>=65)?"senior":"enter a valid age";
+        console.log(years);
+        
+        // score
+        var a=prompt("enter a value between 0 and 100");
+        var b=a>=90?"A":a>=75?"B":a>=60?"c":a>=45?"D":"undefined";
+        console.log(b);
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>

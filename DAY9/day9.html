@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+    //  reverse a string
+       var a="hello";
+       var str=""
+       for(i in a){
+        str=a[i]+str
+
+       }
+       console.log(str);
+
+    //    tracing
+    // 1st:
+    // str ="h" + "" //h
+    // 2nd:
+    // str ="e" + "h" // eh
+    // 3rd:
+    // str ="l" + "eh" // leh
+    // 4th:
+    // str ="l" + "leh" //lleh
+    // 5th:
+    // str ="o" + "lleh" //olleh
+
+
+    //    other format
+    var a="hello";
+    var str=""
+    for(i in a){
+        str=a[i]+str
+    }
+    for(i in str){
+        console.log(str[i]);
+        
+    }
+    // iterate object values and keys using for of loop
+      const obj={
+        name:"nikki",
+        age:22,
+        id:530
+     }
+     for(const[key,value]of Object.entries(obj)){
+        console.log(`${key}: ${value}`);
+        
+     }
+
+       
+       
+       
+   </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // iterate array in for loop
+        let movies=["sita ramam","Hi nanna","bahubali","sanam teri kasam"]
+        for(i=0;i<movies.length;i++)
+        console.log(movies[i]);
+
+    for(i of movies){
+        console.log(i);
+        
+    }
+    for(i in movies){
+        console.log(movies[i]);
+        
+    }
+
+    // removing first and last element from an array
+     let arr=[1,2,3,4,5]
+     arr.shift()
+     arr.pop()
+     console.log(arr);
+
+    //  reverse an array using for loop using push method
+        let a=[1,2,3,4,5,9,8]
+        const rev=(a)=>{
+            let res=[]
+            for(i=a.length-1;i>=0;i--){
+                res.push(a[i])
+            }
+            return res
+        }
+        console.log(rev(a));
+
+        // finding even and odd numbers and even sum and odd sum
+        
+        let b=[12,3,5,6,22,56,29]
+        var evensum=0;
+        var oddsum=0;
+        for(i =0;i<b.length;i++){
+            if(b[i]%2==0){
+                console.log(b[i]+"is even");
+                
+                evensum+=b[i]
+                
+            }else{
+                console.log(b[i]+"is odd");
+                
+                oddsum+=b[i]
+            }
+        }console.log("evensum:" + evensum);
+        console.log("oddsum:" + oddsum);
+
+         // seperate datatype into new array
+         let arr1=["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}];
+        let num=[];
+        let str=[];
+        let bool=[];
+        let obj=[];
+        for(i=0;i<arr1.length;i++){
+            if(typeof arr1[i]==="number"){
+                num.push(arr1[i])
+            }
+            else if(typeof arr1[i]==="string"){
+                str.push(arr1[i])
+            }else if(typeof arr1[i]==="boolean"){
+                bool.push(arr1[i])
+            }else if(typeof arr1[i]==="object"){
+                obj.push(arr1[i])
+            }
+        }
+        console.log("num=",num);
+        console.log("str=",str);
+        console.log("bool=",bool);
+        console.log("obj=",obj);
+        
+        
+        
+        
+
+
+        
+        
+
+        
+    </script>
+</body>
+</html>

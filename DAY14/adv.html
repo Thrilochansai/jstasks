@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // user name validation
+        
+        let a=prompt("enter user name");
+        if(a.length>=5&&a.length<=15){
+            console.log("valid");
+            
+        }else{
+            console.log("invalid");
+            
+        }
+
+    //     email formatter
+          let b=prompt("enter your first name");
+          let c=prompt("enter your last name");
+           console.log(b.concat('.',c,"@gmail.com"));
+           
+
+        //   word counter
+        let sen=prompt("enter the sentence");
+        console.log(sen.split("").length);
+
+        // palindrome or not
+        let f=prompt("enter something")
+        let g= f.split("").reverse( ).join("");
+        if(f===g){
+            console.log("it is palindrome");
+            
+        }else{
+            console.log("not a palindrome");
+            
+        }
+        
+          
+          
+          
+
+          
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <button onclick="bg()">click</button>
+    <script>
+        var newel= document.createElement("h1");
+        newel.innerText="THRILOCHAN SAI";
+        newel.style.color=" green";
+        newel.style.textAlign="center"
+        document.body.appendChild(newel);
+        console.log(newel);
+
+        var obj=document.createElement("h2");
+        obj.innerText="OBJECTIVE :";
+        obj.style.color="orange";
+        document.body.appendChild(obj);
+
+
+        var objp=document.createElement("p");
+        objp.innerText="As a motivated and enthusiastic fresher, I am actively acquiring key skills in software application development through hands-on experience and continuous learning. With a strong foundation in programming languages like [Java , JavaScript , HTML , CSS], I am eager to apply my knowledge in real-world projects. I am also building expertise in problem-solving, coding best practices, and collaboration within teams. My focus is on developing a solid understanding of both front-end and back-end technologies, ensuring I can contribute effectively to innovative projects in a dynamic environment.";
+        document.body.appendChild(objp);
+
+
+
+        var education=document.createElement("h2");
+        education.innerText="EDUCATION :";
+        education.style.color="orange";
+        document.body.appendChild(education);
+
+
+
+        var educationp=document.createElement("ul");
+        var li1=document.createElement("li");
+        var li2=document.createElement("li");
+        var li3=document.createElement("li");
+        var li4=document.createElement("li");
+        li1.innerHTML=  "Malla Reddy Institute of Technology and Sciences, India" + "<pre>"+                                                                        " 2024 " + "</pre>"; 
+        li2.innerHTML="<pre>" + "B Tech (Computer Science and Technology)                                                                                          CGPA:7.00  "+"</pre>";
+        li3.innerHTML="<pre>" + "ABV Jr collage, India                                                                                                             2020 " + "</pre>";
+        li4.innerHTML="<pre>"+"Board of Intermediate Education                                                                                                   CGPA:8.33"+"</pre>";
+        educationp.append(li1,li2,li3,li4);
+        
+        
+        document.body.appendChild(educationp); 
+
+
+
+
+
+        var tech=document.createElement("h2");
+        tech.innerText="TECHNICAL SKILLS :";
+        tech.style.color="orange";
+        document.body.appendChild(tech);
+
+
+
+        var techp=document.createElement("ul");
+        var li1=document.createElement("li");
+        var li2=document.createElement("li");
+        var li3=document.createElement("li");
+        var li4=document.createElement("li");
+        var li5=document.createElement("li");
+
+        li1.innerHTML="Front End Technologies: HTML, CSS, JavaScript, React JS";
+        li2.innerHTML="Frame Works: Bootstrap, Tailwind";
+        li3.innerHTML="Data Base: SQL, Mango DB";
+        li4.innerHTML="Developer Tools: Vs code, Git, GitHub";
+        li5.innerHTML="Programming Languages: Python, Java (Basic)";
+        techp.append(li1,li2,li3,li4,li5);
+        document.body.appendChild(techp);
+
+
+
+
+
+
+        var techs=document.createElement("h2");
+        techs.innerText="SOFT SKILLS :";
+        techs.style.color="orange";
+        document.body.appendChild(techs);
+
+
+        var techsp=document.createElement("ul");
+        var li1=document.createElement("li");
+        var li2=document.createElement("li");
+        var li3=document.createElement("li");
+
+        li1.innerHTML="Communication";
+        li2.innerHTML="Problem-Solving";
+        li3.innerHTML="Adaptability";
+        techsp.append(li1,li2,li3);
+
+        document.body.appendChild(techsp);
+
+
+
+
+
+
+
+        var project=document.createElement("h2");
+        project.innerText="PROJECTS :";
+        project.style.color="orange";
+        document.body.appendChild(project);
+
+
+        var projectp=document.createElement("ul");
+        var li1=document.createElement("li");
+        var li2=document.createElement("li");
+
+        li1.innerHTML="Stress Detection in IT Professionals using Image processing and Machine Learning.";
+        
+        projectp.append(li1,li2);
+       
+        
+        document.body.appendChild(projectp);
+
+
+
+        var projectp1=document.createElement("p");
+        projectp.innerText="  Developed an advanced machine learning model specializing in image processing and emotion detection tailored to IT professionals. Leveraging deep learning techniques and cross-disciplinary collaboration, I engineered a solution aimed at enhancing workplace well-being and understanding within the IT sector.";
+        document.body.appendChild(projectp1);
+        
+        li2.innerHTML="Movie Recommendation System using Sentimental Analysis and Micro Blogging Data.";
+        projectp.append(li2);
+         
+        projectp.append(li1,li2);
+       
+        
+        document.body.appendChild(projectp);
+
+
+        var projectp2=document.createElement("p");
+        projectp2.innerText=" Implemented sentiment analysis on micro blogging data to evaluate the sentiment surrounding multiple movies, facilitating their ranking based on positive sentiment. Utilized these insights to generate personalized or general movie recommendations for users, iterating and enhancing the recommendations algorithm through ongoing data analysis and user feedback.";
+        document.body.appendChild(projectp2);
+        
+
+
+
+
+
+
+
+
+        var certi=document.createElement("h2");
+        certi.innerText="CERTIFICATIONS AND ACHIVEMENTS :";
+        certi.style.color="orange";
+        document.body.appendChild(certi);
+
+
+        var certip=document.createElement("ul");
+        var li1=document.createElement("li");
+        var li2=document.createElement("li");
+
+        li1.innerHTML="Python - Hacker Ranker";
+        li2.innerHTML="Python Mastering The Essentials - Scalar Academy";
+
+        certip.append(li1,li2);
+        document.body.appendChild(certip);
+
+
+        let arr=["red","blue","white","yellow"];
+        var count=0;
+        function bg(){
+            document.body.style.background=arr[count];
+            count++;
+            if(count==arr.length-1);
+            if(count==arr.lenght-1)count=0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                            
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

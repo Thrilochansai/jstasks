@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 1
+            // if condition
+         var a=prompt("week");
+         if(a=="monday"){
+             console.log("start your week strong!");
+            
+          }
+         
+          else if("a"=="tuesday"){
+             console.log("keep going!");
+            
+          }
+          else if("a"=="Wednesday"){
+             console.log("halfway there");
+              }
+             else if("a"=="thursday"){
+                 console.log("almost the weekend");
+                
+             }
+              else if("a"=="friday"){
+                 console.log("happy friday!");
+                
+              }
+             else("a"=="saturday"&& "sunday");
+              {
+             console.log("enjoy your weekend");
+                
+              }
+
+            //  switch statement
+            // weekdays
+            var a=prompt("enter your day");
+            switch(a){
+                case "monday":
+                    console.log("start your week strong");
+                    break;
+                    case "tuesday":
+                        console.log("keep going");
+                        break;
+                        case "wednesday":
+                            console.log("halfway there");
+                            break;
+                        case "thursday":
+                            console.log("almost the weekend");
+                            break;
+                        case "friday":
+                            console.log("happy friday");
+                            break;
+                        case "saturday" && "sunday":
+                            console.log("enjoy your weekend!");
+                            break;
+                        default:console.log("it is not your day");
+                        
+                             }
+
+                // Task 2
+                // Traffic light
+
+                var a=prompt("enter the color");
+                switch(a){
+                    case "red":
+                        console.log("stop");
+                        break;
+                    
+                    case "yellow":
+                        console.log("Get ready");
+                        break;
+                        
+                    case "green":
+                        console.log("GO");
+                        break;
+                    default: console.log("it indicates other meaning");
+                    
+                          }
+
+                    // Task 3
+                    // discount
+                   var a=+prompt("enter amount");
+                   switch(true){
+                    case(a<50): console.log("no discount");
+                    break;
+                    case(a>=50&&a<=100): console.log("5% discount");
+                    break;
+                    case(a>=101&&a<=200): console.log("10% discount");
+                    break;
+                    case(a>200): console.log("15% discount");
+                    break;
+                    default: console.log("other discounts");
+                    
+                     }
+
+                    // Task 4
+                    // Restaurant menu
+
+                    var c=prompt("enter the dish name");
+                    switch(c){
+                        case "biryani": console.log("160/-");
+                        break;
+                        case "chicken fried rice": console.log("100/-");
+                        break;
+                        case "mutton biryani": console.log("400/-");
+                        break;
+                        default: console.log("not in the menu");
+                        }
+
+                        // Task 5
+                        // simple calculator
+
+                        let num1=+prompt("enter a first number");
+                        let num2=+prompt("entera second number");
+                        let ope=prompt("enter the operator symbol");
+                        switch(ope){
+                            case "+": console.log(num1+num2);
+                            break;
+                            case "-": console.log(num1-num2);
+                            break;
+                            case "*": console.log(num1*num2);
+                            break;
+                            case "%": console.log(num1%num2);
+                            break;
+                            default: console.log(ope+"is not a valid operator");
+                              }
+
+ </script>
+</body>
+</html>

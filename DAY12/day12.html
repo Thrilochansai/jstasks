@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        img{
+            margin-top: 5%;
+            margin-left:29%;
+        }
+        button{
+            padding:10px;
+            background-color: blanchedalmond;
+            
+        }
+        #btn1{
+            margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://media.dashdevs.com/images/top-frontend-technologies-2022-desktop.jpg" width="50%" height="50%" id="p1" alt="">
+    <br><br>
+    <!-- buttons -->
+     
+     <button id="btn1">HTML</button>
+     <button id="btn2">CSS</button>
+     <button id="btn3">JAVASCRIPT</button>
+     <button id="btn4">REACT JS</button>
+    
+
+     <script>
+        let pic=document.getElementById("p1");
+
+        let btn1=document.getElementById("btn1");
+        btn1.addEventListener('click',()=>{
+            pic.src="https://www.blog.itone.uz/wp-content/uploads/2021/10/HTML5.png"
+        })
+
+        let btn2=document.getElementById("btn2");
+        btn2.addEventListener('click',()=>{
+            pic.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQppSVUnjXwug8_2DchWN0DSwAsCgg2ABeQZQ&s"
+        })
+
+        let btn3=document.getElementById("btn3")
+        btn3.addEventListener('click',()=>{
+            pic.src="https://cyberhoot.com/wp-content/uploads/2020/07/Free-Courses-to-learn-JavaScript.jpg"
+        })
+
+        let btn4=document.getElementById("btn4")
+        btn4.addEventListener('click',()=>{
+            pic.src="https://miro.medium.com/v2/resize:fit:1400/0*50coYPiud3mE8e3G.png"
+        })
+     </script>
+
+
+</body>
+</html>

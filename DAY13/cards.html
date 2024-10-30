@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap:20px;
+        }
+        img{
+            width:90%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="parent"></div>
+    <script>
+        var headings=["SummerHouse","BrickHouse","Renovated","BarnHouse","SummerHouse","BrickHouse","Renovated","BarnHouse"];
+        var images=["https://www.w3schools.com/w3images/house5.jpg","https://www.w3schools.com/w3images/house2.jpg","https://www.w3schools.com/w3images/house3.jpg","https://www.w3schools.com/w3images/house4.jpg","https://www.w3schools.com/w3images/house2.jpg","https://www.w3schools.com/w3images/house5.jpg","https://www.w3schools.com/w3images/house4.jpg","https://www.w3schools.com/w3images/house3.jpg"];
+         var parent=document.querySelector(".parent");
+         for(i=0;i<headings.length;i++){
+            var child=document.createElement("div");
+            var childa=document.createElement("div");
+             var childb=document.createElement("img");
+             childa.innerText=headings[i]
+             childa.style.position="absolute";
+            //  childa.style.top="10px";
+             
+             childa.style.color="white";
+             childa.style.background="black";
+             
+             childb.src=images[i]
+             
+             child.append(childa,childb);
+             parent.appendChild(child);
+             console.log(parent);
+             
+         }
+    
+    
+    
+    </script>
+
+</body>
+
+</html>
